@@ -5,11 +5,18 @@ import Body from "./components/Body";
 
 const App = () => {
   return (
-    <View style={{ marginTop: 20}}>
+    <View style={styles.container}>
       <Header />
       <Body />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#116D6E',
+    flex: 1,
+  }
+})
 
 export default App;
