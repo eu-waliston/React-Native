@@ -1,11 +1,13 @@
 import React from "react";
 import { StyleSheet, Image, Text, View, Button } from "react-native";
+import Header from "./components/Header";
+import Body from "./components/Body";
 
 const App = () => {
   return (
     <View style={{ marginTop: 20}}>
-      <Text style={{textAlign: "center"}}>Oi</Text>
-      <Button title="Clique"></Button>
+      <Header />
+      <Body />
     </View>
   );
 }
