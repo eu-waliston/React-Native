@@ -13,6 +13,7 @@ const header = StyleSheet.create({
   headerContainer: {
     backgroundColor: "#FFF",
     padding: 20,
+    width: "100%"
   },
   textStyle: {
     textAlign: "center",
