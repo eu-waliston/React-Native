@@ -43,9 +43,9 @@ const bodyStyle = StyleSheet.create({
     padding: 20,
   },
   tinyLogo: {
-    width: 90,
-    height: 90,
-    justifyContent: "center"
+    width: 190,
+    height: 190,
+    left: 60
   },
 });
 export default Body;
