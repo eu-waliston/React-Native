@@ -2,6 +2,8 @@ import React from "react";
 import { StyleSheet, Image, Text, View, Button, ScrollView, Platform} from "react-native";
 import Header from "./components/Header";
 import Body from "./components/Body";
+import { StatusBar } from "expo-status-bar";
+
 
 export default class App extends React.Component {
   constructor(props) {
@@ -13,6 +15,7 @@ export default class App extends React.Component {
   render() {
       return (
     <ScrollView style={styles.container}>
+      <StatusBar hidden />
       <Header />
       <Body />
       {/* <Text>{this.platforma}</Text> */}
