@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 
 const App = () => {
+  console.disableYellowBox = false;
 
   return (
     <ScrollView style={styles.container}>
