@@ -1,18 +1,26 @@
 import React from "react";
-import { StyleSheet, Image, Text, View, Button, ScrollView } from "react-native";
+import { StyleSheet, Image, Text, View, Button, ScrollView, Platform} from "react-native";
 import Header from "./components/Header";
 import Body from "./components/Body";
 
-const App = () => {
-  console.disableYellowBox = false;
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    console.disableYellowBox = false;
+    // this.platforma = Platform.OS;
+  }
 
-  return (
+  render() {
+      return (
     <ScrollView style={styles.container}>
       <Header />
       <Body />
+      {/* <Text>{this.platforma}</Text> */}
     </ScrollView>
   );
+  }
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -22,7 +30,3 @@ const styles = StyleSheet.create({
 
   }
 })
-
-
-
-export default App;
