@@ -3,17 +3,29 @@ import { Text, View, StyleSheet } from "react-native";
 
 const Header = () => {
   const name = "Waliston";
-  var idade = 27;
-  let cidade = "SM";
+
+  var mostrar = false;
+  var conteudo = "";
+  if (mostrar) {
+    conteudo = <Text>Danki Code</Text>;
+  } else {
+    conteudo = <Text>No Code</Text>;
+  }
 
   return (
-    <View style={header.bar}>
-      <Text style={header.text}>Olá, {name}</Text>
+    <View style={header.container}>
+      <View style={header.bar}>
+        <Text style={header.text}>Olá, {name}</Text>
+      </View>
+      {conteudo}
     </View>
   );
 };
 
 const header = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
   bar: {
     backgroundColor: "#0E2954",
     marginTop: 25,
