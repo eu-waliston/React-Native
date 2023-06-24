@@ -4,12 +4,16 @@ import { Text, View, StyleSheet } from "react-native";
 const Header = () => {
   const name = "Waliston";
 
-  var mostrar = false;
-  var conteudo = "";
-  if (mostrar) {
-    conteudo = <Text>Danki Code</Text>;
-  } else {
-    conteudo = <Text>No Code</Text>;
+  // var mostrar = true;
+  // var conteudo = "";
+  // if (mostrar) {
+  //   conteudo = <Text>Danki Code</Text>;
+  // } else {
+  //   conteudo = <Text>No Code</Text>;
+  // }
+  var component = [];
+  for (let i = 0; i <= 10; i++) {
+      component[i] = <Text>Selecione: {i}</Text>
   }
 
   return (
@@ -17,7 +21,12 @@ const Header = () => {
       <View style={header.bar}>
         <Text style={header.text}>Olá, {name}</Text>
       </View>
-      {conteudo}
+      {/* {conteudo} */}
+      {
+        component.map((elem) => {
+          return (elem)
+        })
+      }
     </View>
   );
 };
