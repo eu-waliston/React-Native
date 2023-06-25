@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, StyleSheet, View } from "react-native";
-import ButtonComponent from "./Button";
+import ButtonEffect from "./ButtonEffect";
 
 const App = (props) => {
   return (
@@ -8,7 +8,7 @@ const App = (props) => {
       {/* <Text style={bodyStyle.text}>
         {this.chamarNome()}
       </Text> */}
-      <ButtonComponent titulo="Teste" />
+      <ButtonEffect titulo="ADD +" />
     </View>
   );
 };
